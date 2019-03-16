@@ -25,24 +25,25 @@ However, these abstraction layers can hide some important aspects of DFT that yo
 Feel free to complete this lab however you would like, but we highly recommend following the jupyter notebooks in this repo and using python to perform the analyses.
 
 ## Project 2 Grading: 
-
-Format (this is a professional report)			10pts
-Explain Calculation/Introduction			10pts
-Output/Input files					10pts
+```
+Format (this is a professional report)		10pts
+Explain Calculation/Introduction		10pts
+Output/Input files				10pts
 
 Calculations (and explanation): 
 	DC: (Just showing plots is not sufficient)
-	Energy convergence				5pts
-	Kpts convergence				5pts
-	Energy volume curve				10pts
-	Explain 					5pts
+	Energy convergence			5pts
+	Kpts convergence			5pts
+	Energy volume curve			10pts
+	Explain 				5pts
 
 	Beta-Sn:
-	Energy convergence				5pts
-	Kpts convergence				5pts
-	Energy volume curve				10pts
+	Energy convergence			5pts
+	Kpts convergence			5pts
+	Energy volume curve			10pts
 	Explain					5pts
 
 What is the pressure for transformation		5pts
 Compare to experimental value			5pts
-Explanation						10pts 
+Explanation					10pts 
+```
