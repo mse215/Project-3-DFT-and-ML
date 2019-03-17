@@ -1,5 +1,6 @@
 from pymatgen.io.vasp.inputs import Kpoints, Poscar, Potcar, Incar
 from pymatgen.core import Structure
+from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
 import sys
 import os 
 from shutil import copytree, copyfileobj, copy
@@ -13,13 +14,16 @@ user_kpoints = Incar.from_file(sys.argv[1] + "/KPOINTS")
 
 data_directory = "{}/data".format(dir_path)
 
+def success():
+    
+
 for path, dirs, files in os.walk(data_directory):
     for directory in dirs:
         INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
         structure = Structure.from_file(os.path.join(path, directory)+ "/POSCAR")
         KPOINTS = Incar.from_file(os.path.join(path, directory)+"/KPOINTS")
         
-        if user_structure == structure and user_kpoints == KPOINTS and user_incar == INCAR:
+        if SpacegroupAnalyzer(user_structure).get_primitive_standard_structure() == SpacegroupAnalyzer(structure).get_primitive_standard_structure() and user_kpoints == KPOINTS and user_incar == INCAR:
             with open(os.path.join(path, directory)+"/output.txt", "r") as f:
                 copyfileobj(f, sys.stdout)
             for subpath, subdirs, subfiles in os.walk(data_directory):
@@ -27,3 +31,6 @@ for path, dirs, files in os.walk(data_directory):
                     # Don't overwrite user's input files
                     if "INCAR" not in file and "POSCAR" not in file and "KPOINTS" not in file and "POTCAR" not in file:
                         copy(os.path.join(subpath, file), user_directory)
+            exit()
+
+print("No matching pre-computed data for these input files was found. Please check your input files and try again.")
