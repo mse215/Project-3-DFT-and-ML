@@ -14,23 +14,24 @@ Run this repo in an online Binder by clicking the button below:
 
 <img src="static/structures.png" alt="diamond cubic Si and beta-Sn Si" width="500"/>
 
----
-## Table of Contents
-
-## Project Doc - [MSE 215 Project 3]("MSE%20215%20Project%203%20(Spring%202019).ipynb")
-
-The main project doc describes 
-
-
-
-
-
 ## Problem Walkthroughs
 The notebooks in this repository will walk you through typical workflows that computational materials researchers today would use to solve these problems today. A lot of the details of running DFT calculations have been abstracted away by software in recent years, which has helped make DFT more accessible, faster to use, and robust. We will be using these tools in this project to give you a taste (and some practical training) on how DFT is done today. 
 
 However, these abstraction layers can hide some important aspects of DFT that you should be aware of. With this in mind, we will also be asking you to prepare some input files by hand so you have a chance to see these details up close. 
 
 Feel free to complete this lab however you would like, but we highly recommend following the jupyter notebooks in this repo and using python to perform the analyses.
+
+---
+## Table of Contents
+
+* Project Description - [MSE 215 Project 3]("https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb")
+
+* Problem 1 Walkthrough Notebook - [01 - Problem 1]("https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb")
+
+* Problem 3 Walkthrough Notebook - [02 - Problem 3]("https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb")
+
+--- 
+
 
 ## Project 2 Grading: 
 ```
