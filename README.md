@@ -10,7 +10,7 @@ Run this repo in an online Binder by clicking the button below:
 
 <h> <span style="color:red"><b>NOTICE TO BINDER USERS: YOUR NOTEBOOK PROGRESS WILL NOT BE SAVED IF YOU CLOSE THIS WINDOW OR LEAVE IT INACTIVE FOR TOO LONG.</b></span> </h>
       
-<h> <span style="color:red"><b>PLEASE DOWNLOAD YOUR NOTEBOOKS AND FILES REGULARLY OR DOWNLOAD THIS REPO AND RUN OFFLINE ON YOUR MACHINE. See [running_offline](running_offline.md) for more info.</b> </span></h>
+<h> <span style="color:red"><b>PLEASE DOWNLOAD YOUR NOTEBOOKS AND FILES REGULARLY OR DOWNLOAD THIS REPO AND RUN OFFLINE ON YOUR MACHINE. See [how to run offline](running_offline.md) for more info.</b> </span></h>
 
 <img src="static/structures.png" alt="diamond cubic Si and beta-Sn Si" width="500"/>
 
@@ -39,23 +39,31 @@ Problem 3 Walkthrough Notebook |
 ## Project 2 Grading: 
 ```
 Format (this is a professional report)		10pts
-Explain Calculation/Introduction		10pts
+Explain Calculations/Introduction		10pts
 Output/Input files				10pts
 
-Calculations (and explanation): 
-	DC: (Just showing plots is not sufficient)
+DFT Calculations (and explanation): 
+(Just showing plots is not sufficient)
+	
+	Diamond Cubic: 
 	Energy convergence			5pts
 	Kpts convergence			5pts
 	Energy volume curve			10pts
-	Explain 				5pts
 
 	Beta-Sn:
 	Energy convergence			5pts
 	Kpts convergence			5pts
 	Energy volume curve			10pts
-	Explain					5pts
-
+	
 What is the pressure for transformation		5pts
 Compare to experimental value			5pts
-Explanation					10pts 
+Explanation					10pts
+Thourough analysis of excerpt from literature	10pts
+
+Bulk Modulus ML:
+	Report features used			5pts
+	Report cross validation scores		5pts
+	Plot learning curves			10pts
+	Bulk modulus within 20% of DFT		5pts
+	Report final score on test set		5pts
 ```
