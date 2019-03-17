@@ -14,9 +14,6 @@ user_kpoints = Incar.from_file(sys.argv[1] + "/KPOINTS")
 
 data_directory = "{}/data".format(dir_path)
 
-def success():
-    
-
 for path, dirs, files in os.walk(data_directory):
     for directory in dirs:
         INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
@@ -33,4 +30,4 @@ for path, dirs, files in os.walk(data_directory):
                         copy(os.path.join(subpath, file), user_directory)
             exit()
 
-print("No matching pre-computed data for these input files was found. Please check your input files and try again.")
+print("No matching pre-computed data for the input files in specified directory were found. Please check your input files and try again.")
