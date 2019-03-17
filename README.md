@@ -8,7 +8,7 @@
 
 <h> <span style="color:red"><b>NOTICE TO BINDER USERS: YOUR NOTEBOOK PROGRESS WILL NOT BE SAVED IF YOU CLOSE THIS WINDOW OR LEAVE IT INACTIVE FOR TOO LONG.</b></span> </h>
       
-<h> <span style="color:red"><b>PLEASE DOWNLOAD YOUR NOTEBOOKS AND FILES REGULARLY OR DOWNLOAD THIS REPO AND RUN OFFLINE ON YOUR MACHINE. See "running_offline.md" for more info.</b> </span></h>
+<h> <span style="color:red"><b>PLEASE DOWNLOAD YOUR NOTEBOOKS AND FILES REGULARLY OR DOWNLOAD THIS REPO AND RUN OFFLINE ON YOUR MACHINE. See "[running_offline.md](running_offline.md)" for more info.</b> </span></h>
 
 
 ## Introduction
