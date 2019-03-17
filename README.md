@@ -17,7 +17,7 @@ Run this repo in an online Binder by clicking the button below:
 ---
 ## Table of Contents
 
-## Project Doc - [MSE 215 Project 3]("MSE\ 215\ Project\ 3\ \(Spring\ 2019\).ipynb")
+## Project Doc - [MSE 215 Project 3]("MSE%20215%20Project%203%20(Spring%202019).ipynb")
 
 The main project doc describes 
 
