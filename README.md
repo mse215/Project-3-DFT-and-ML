@@ -24,11 +24,11 @@ Feel free to complete this lab however you would like, but we highly recommend f
 ---
 ## Table of Contents
 
-* Project Description - [MSE 215 Project 3]("https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb")
+#### Project Description - [MSE 215 Project 3]("https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb")
 
-* Problem 1 Walkthrough Notebook - [01 - Problem 1]("https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb")
+#### Problem 1 Walkthrough Notebook - [01 - Problem 1]("https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb")
 
-* Problem 3 Walkthrough Notebook - [02 - Problem 3]("https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb")
+#### Problem 3 Walkthrough Notebook - [02 - Problem 3]("https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb")
 
 --- 
 
