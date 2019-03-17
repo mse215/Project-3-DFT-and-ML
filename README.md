@@ -21,7 +21,6 @@ However, these abstraction layers can hide some important aspects of DFT that yo
 
 Feel free to complete this lab however you would like, but we highly recommend following the jupyter notebooks in this repo and using python to perform the analyses.
 
----
 
 ## Table of Contents
 
