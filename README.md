@@ -10,7 +10,7 @@ Run this repo in an online Binder by clicking the button below:
 
 <h> <span style="color:red"><b>NOTICE TO BINDER USERS: YOUR NOTEBOOK PROGRESS WILL NOT BE SAVED IF YOU CLOSE THIS WINDOW OR LEAVE IT INACTIVE FOR TOO LONG.</b></span> </h>
       
-<h> <span style="color:red"><b>PLEASE DOWNLOAD YOUR NOTEBOOKS AND FILES REGULARLY OR DOWNLOAD THIS REPO AND RUN OFFLINE ON YOUR MACHINE. See [running_offline.md](running_offline) for more info.</b> </span></h>
+<h> <span style="color:red"><b>PLEASE DOWNLOAD YOUR NOTEBOOKS AND FILES REGULARLY OR DOWNLOAD THIS REPO AND RUN OFFLINE ON YOUR MACHINE. See [running_offline](running_offline.md) for more info.</b> </span></h>
 
 <img src="static/structures.png" alt="diamond cubic Si and beta-Sn Si" width="500"/>
 
