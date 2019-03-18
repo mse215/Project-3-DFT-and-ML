@@ -12,7 +12,7 @@ user_structure = Structure.from_file(sys.argv[1] + "/POSCAR")
 user_incar = Incar.from_file(sys.argv[1] + "/INCAR")
 user_kpoints = Incar.from_file(sys.argv[1] + "/KPOINTS")
 
-data_directory = "{}/data".format(dir_path)
+data_directory = "{}/fake_vasp_data".format(dir_path)
 
 for path, dirs, files in os.walk(data_directory):
     for directory in dirs:
