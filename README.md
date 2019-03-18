@@ -31,7 +31,7 @@ Problem 1 Walkthrough Notebook |
 [01 - Problem 1](https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb)
 
 Problem 3 Walkthrough Notebook | 
-[02 - Problem 3](https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb)
+[02 - Problem 2](https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb)
 
 
 
