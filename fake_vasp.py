@@ -1,10 +1,12 @@
 from pymatgen.io.vasp.inputs import Kpoints, Poscar, Potcar, Incar
 from pymatgen.core import Structure
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
+from pymatgen.analysis.structure_matcher import StructureMatcher
 import sys
 import os 
 from shutil import copytree, copyfileobj, copy
 
+sm = StructureMatcher()
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 user_directory = sys.argv[1]
@@ -19,15 +21,23 @@ for path, dirs, files in os.walk(data_directory):
         INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
         structure = Structure.from_file(os.path.join(path, directory)+ "/POSCAR")
         KPOINTS = Incar.from_file(os.path.join(path, directory)+"/KPOINTS")
-        
-        if SpacegroupAnalyzer(user_structure).get_primitive_standard_structure() == SpacegroupAnalyzer(structure).get_primitive_standard_structure() and user_kpoints == KPOINTS and user_incar == INCAR:
-            with open(os.path.join(path, directory)+"/output.txt", "r") as f:
-                copyfileobj(f, sys.stdout)
-            for subpath, subdirs, subfiles in os.walk(data_directory):
-                for file in subfiles:
-                    # Don't overwrite user's input files
-                    if "INCAR" not in file and "POSCAR" not in file and "KPOINTS" not in file and "POTCAR" not in file:
-                        copy(os.path.join(subpath, file), user_directory)
-            exit()
+        s1 = SpacegroupAnalyzer(user_structure).get_primitive_standard_structure()
+        s2 = SpacegroupAnalyzer(structure).get_primitive_standard_structure()
+#         print(user_incar)
+#         print(INCAR)
+        if  sm.fit(s1, s2) :
+#             print("structures match")
+            if user_kpoints == KPOINTS:
+#                 print("KPOINTS match")
+                if user_incar == INCAR:
+#                     print("INCAR match")
+                    with open(os.path.join(path, directory)+"/output.txt", "r") as f:
+                        copyfileobj(f, sys.stdout)
+                    for subpath, subdirs, subfiles in os.walk(data_directory):
+                        for file in subfiles:
+                            # Don't overwrite user's input files
+                            if "INCAR" not in file and "POSCAR" not in file and "KPOINTS" not in file and "POTCAR" not in file:
+                                copy(os.path.join(subpath, file), user_directory)
+                    exit()
 
 print("No matching pre-computed data for the input files in specified directory were found. Please check your input files and try again.")
