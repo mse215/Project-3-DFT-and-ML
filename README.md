@@ -27,14 +27,20 @@ Feel free to complete this lab however you would like, but we highly recommend f
 Project Description | 
 [MSE 215 Project 3](https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb)
 
-Problem 1 Walkthrough Notebook | 
+#### Problem 1 (Due Tuesday, 04/02/2019):
+Walkthrough Notebook | 
 [01 - Problem 1](https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb)
 
-Problem 3 Walkthrough Notebook | 
-[02 - Problem 2](https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb)
+#### Problem 2 (Due Friday, 04/12/2019):
+Walkthrough Notebook | 
+Coming Soon!
 
+#### Problem 3 (Due Friday, 04/12/2019):
+See description in [MSE 215 Project 3](https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb)
 
-
+#### Problem 4 (Due Friday, 04/12/2019):
+Walkthrough Notebook | 
+Coming Soon!
 
 ## Project 2 Grading: 
 ```
