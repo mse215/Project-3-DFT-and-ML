@@ -31,7 +31,7 @@ Project Description |
 * Walkthrough Notebook | [01 - Problem 1](https://github.com/mse215/project3/blob/master/01%20-%20Problem%201.ipynb)
 
 #### Problem 2 (Due Friday, 04/12/2019):
-* Walkthrough Notebook | Coming Soon!
+* Walkthrough Notebook | [02 - Problem 2](https://github.com/mse215/project3/blob/master/02%20-%20Problem%202.ipynb)
 
 #### Problem 3 (Due Friday, 04/12/2019):
 * See description in [MSE 215 Project 3](https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb)
