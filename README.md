@@ -69,4 +69,5 @@ Bulk Modulus ML:
 	Plot learning curves			10pts
 	Bulk modulus within 20% of DFT		5pts
 	Report final score on test set		5pts
+	Test set RMSE < 20 GPa			10pts
 ```
