@@ -40,7 +40,7 @@ for path, dirs, files in os.walk(data_directory):
 #                     print("INCAR match")
                     with open(os.path.join(path, directory)+"/output.txt", "r") as f:
                         copyfileobj(f, sys.stdout)
-                    for subpath, subdirs, subfiles in os.walk(data_directory):
+                    for subpath, subdirs, subfiles in os.walk(os.path.join(path, directory)):
                         for file in subfiles:
                             # Don't overwrite user's input files
                             if "INCAR" not in file and "POSCAR" not in file and "KPOINTS" not in file and "POTCAR" not in file:
