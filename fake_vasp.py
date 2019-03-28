@@ -16,6 +16,10 @@ user_kpoints = Incar.from_file(sys.argv[1] + "/KPOINTS")
 
 data_directory = "{}/fake_vasp_data".format(dir_path)
 
+structure_matched = False
+KPOINTS_matched = False
+INCAR_matched = False
+
 for path, dirs, files in os.walk(data_directory):
     for directory in dirs:
         INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
@@ -26,10 +30,13 @@ for path, dirs, files in os.walk(data_directory):
 #         print(user_incar)
 #         print(INCAR)
         if  sm.fit(s1, s2) :
+            structure_matched = True
 #             print("structures match")
             if user_kpoints == KPOINTS:
+                KPOINTS_matched = True
 #                 print("KPOINTS match")
                 if user_incar == INCAR:
+                    INCAR_matched = True
 #                     print("INCAR match")
                     with open(os.path.join(path, directory)+"/output.txt", "r") as f:
                         copyfileobj(f, sys.stdout)
@@ -39,5 +46,12 @@ for path, dirs, files in os.walk(data_directory):
                             if "INCAR" not in file and "POSCAR" not in file and "KPOINTS" not in file and "POTCAR" not in file:
                                 copy(os.path.join(subpath, file), user_directory)
                     exit()
+error_string = """
+No matching pre-computed data for the input files in specified directory were found:
+    Problem with POSCAR? {}
+    Problem with INCAR? {}
+    Problem with KPOINTS? {}
+Please check your input files and try again.
+""".format(!structure_matched, !INCAR_matched, !KPOINTS_matched)
+print(error_string)
 
-print("No matching pre-computed data for the input files in specified directory were found. Please check your input files and try again.")
