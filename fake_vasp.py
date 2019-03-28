@@ -16,7 +16,7 @@ user_kpoints = Incar.from_file(sys.argv[1] + "/KPOINTS")
 
 data_directory = "{}/fake_vasp_data".format(dir_path)
 
-structure_matched = None
+structure_matched = False
 KPOINTS_matched = None
 INCAR_matched = None
 
