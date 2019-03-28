@@ -52,6 +52,6 @@ No matching pre-computed data for the input files in specified directory were fo
     Problem with INCAR? {}
     Problem with KPOINTS? {}
 Please check your input files and try again.
-""".format((not structure_matched), (not INCAR_matched), (not KPOINTS_matched))
+""".format((not structure_matched if structure_matched is not None else "Unknown"), (not INCAR_matched if INCAR_matched is not None else "Unknown"), (not KPOINTS_matched if KPOINTS_matched is not None else "Unknown"))
 print(error_string)
 
