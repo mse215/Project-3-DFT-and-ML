@@ -12,7 +12,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 user_directory = sys.argv[1]
 user_structure = Structure.from_file(sys.argv[1] + "/POSCAR")
 user_incar = Incar.from_file(sys.argv[1] + "/INCAR")
-user_kpoints = Incar.from_file(sys.argv[1] + "/KPOINTS")
+user_kpoints = Kpoints.from_file(sys.argv[1] + "/KPOINTS")
 
 data_directory = "{}/fake_vasp_data".format(dir_path)
 
@@ -24,7 +24,7 @@ for path, dirs, files in os.walk(data_directory):
     for directory in dirs:
         INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
         structure = Structure.from_file(os.path.join(path, directory)+ "/POSCAR")
-        KPOINTS = Incar.from_file(os.path.join(path, directory)+"/KPOINTS")
+        KPOINTS = Kpoints.from_file(os.path.join(path, directory)+"/KPOINTS")
         s1 = SpacegroupAnalyzer(user_structure).get_primitive_standard_structure()
         s2 = SpacegroupAnalyzer(structure).get_primitive_standard_structure()
 #         print(user_incar)
@@ -32,9 +32,11 @@ for path, dirs, files in os.walk(data_directory):
         if  sm.fit(s1, s2) :
             structure_matched = True
 #             print("structures match")
-            if user_kpoints == KPOINTS:
+            KPOINTS_matched=False
+            if (KPOINTS.as_dict() == user_kpoints.as_dict()):
                 KPOINTS_matched = True
 #                 print("KPOINTS match")
+                INCAR_matched=False
                 if user_incar == INCAR:
                     INCAR_matched = True
 #                     print("INCAR match")
