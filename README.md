@@ -67,7 +67,7 @@ Bulk Modulus ML:
 	Report features used			5pts
 	Report cross validation scores		5pts
 	Plot learning curves			10pts
-	Bulk modulus within 30% of DFT		5pts
+	Bulk modulus within 40% of DFT		5pts
 	Report final score on test set		5pts
 	Test set RMSE < 20 GPa			10pts
 ```
