@@ -37,7 +37,7 @@ Project Description |
 * See description in [MSE 215 Project 3](https://github.com/mse215/project3/blob/master/MSE%20215%20Project%203%20(Spring%202019).ipynb)
 
 #### Problem 4 (Due Friday, 04/12/2019):
-* Walkthrough Notebook | Coming Soon!
+* Walkthrough Notebook | [03 - Problem 4](https://github.com/mse215/project3/blob/master/03%20-%20Problem%204.ipynb)
 
 ## Project 2 Grading: 
 ```
