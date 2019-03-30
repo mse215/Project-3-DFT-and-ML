@@ -64,9 +64,17 @@ Explanation					10pts
 Thourough analysis of excerpt from literature	10pts
 
 Bulk Modulus ML:
-	Plot predictions vs DFT			10pts
-	Report cross validation scores		5pts
-	CV RMSE < 20 GPa			10pts
-	Discussion of results			10pts
+	Linear Regression:
+	Plot predictions vs DFT			5pts
+	Report cross validation score		5pts
+	CV RMSE < 25 GPa			5pts
+	Discussion of results			5pts
+	Compare CPU time for DFT vs ML		5pts
+	
+	Random Forest:
+	Plot predictions vs DFT			5pts
+	Report cross validation score		5pts
+	CV RMSE < 20 GPa			5pts
+	Discussion of results			5pts
 	Compare CPU time for DFT vs ML		5pts
 ```
