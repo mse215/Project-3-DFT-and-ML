@@ -68,5 +68,5 @@ Bulk Modulus ML:
 	Report cross validation scores		5pts
 	CV RMSE < 20 GPa			10pts
 	Discussion of results			10pts
-	Compare CPU time fo DFT vs ML		5pts
+	Compare CPU time for DFT vs ML		5pts
 ```
