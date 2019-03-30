@@ -64,10 +64,8 @@ Explanation					10pts
 Thourough analysis of excerpt from literature	10pts
 
 Bulk Modulus ML:
-	Report features used			5pts
-	Report cross validation scores		5pts
 	Plot predictions vs DFT			10pts
-	Report final score on test set		5pts
-	Test set RMSE < 20 GPa			10pts
+	Report cross validation scores		5pts
+	CV RMSE < 20 GPa			10pts
 	Discussion of results			10pts
 ```
