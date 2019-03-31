@@ -39,11 +39,11 @@ Project Description |
 #### Problem 4 (Due Friday, 04/12/2019):
 * Walkthrough Notebook | [03 - Problem 4](https://github.com/mse215/project3/blob/master/03%20-%20Problem%204.ipynb)
 
-## Project 2 Grading: 
+## Project 3 Grading: 
 ```
 Format (this is a professional report)		10pts
 Explain Calculations/Introduction		10pts
-Output/Input files				10pts
+Output/Input files (use google drive)		10pts
 
 DFT Calculations (and explanation): 
 (Just showing plots is not sufficient)
