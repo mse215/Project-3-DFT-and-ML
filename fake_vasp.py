@@ -22,20 +22,20 @@ INCAR_matched = None
 
 for path, dirs, files in os.walk(data_directory):
     for directory in dirs:
-        INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
         structure = Structure.from_file(os.path.join(path, directory)+ "/POSCAR")
-        KPOINTS = Kpoints.from_file(os.path.join(path, directory)+"/KPOINTS")
         s1 = SpacegroupAnalyzer(user_structure).get_primitive_standard_structure()
         s2 = SpacegroupAnalyzer(structure).get_primitive_standard_structure()
 #         print(user_incar)
 #         print(INCAR)
-        if  sm.fit(s1, s2) :
+        if  sm.fit(s1, s2):
             structure_matched = True
 #             print("structures match")
-            KPOINTS_matched=False
+            KPOINTS = Kpoints.from_file(os.path.join(path, directory)+"/KPOINTS")
+            KPOINTS_matched = False
             if (KPOINTS.as_dict() == user_kpoints.as_dict()):
                 KPOINTS_matched = True
 #                 print("KPOINTS match")
+                INCAR = Incar.from_file(os.path.join(path, directory)+"/INCAR")
                 INCAR_matched = False
                 if user_incar == INCAR:
                     INCAR_matched = True
@@ -50,10 +50,10 @@ for path, dirs, files in os.walk(data_directory):
                     exit()
 error_string = """
 No matching pre-computed data for the input files in directory '{}' were found:
-    Problem with POSCAR? {}
-    Problem with KPOINTS? {}
-    Problem with INCAR? {}
+    Matching POSCAR found? {}
+    Matching POSCAR + KPOINTS found? {}
+    Matching POSCAR + KPOINTS + INCAR found? {}
 Please check your input files and try again.
-""".format(user_directory, (not structure_matched if structure_matched is not None else "Unknown"), (not INCAR_matched if INCAR_matched is not None else "Unknown"), (not KPOINTS_matched if KPOINTS_matched is not None else "Unknown"))
+""".format(user_directory, (structure_matched if structure_matched is not None else "Unknown"), (KPOINTS_matched if KPOINTS_matched is not None else "Unknown"), (INCAR_matched if INCAR_matched is not None else "Unknown"))
 print(error_string)
 
