@@ -6,7 +6,7 @@ import sys
 import os 
 from shutil import copytree, copyfileobj, copy
 
-sm = StructureMatcher(ltol=0.001, stol=0.3, angle_tol=5, scale=False)
+sm = StructureMatcher(ltol=0.008, stol=0.3, angle_tol=5, scale=False)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 user_directory = sys.argv[1]
